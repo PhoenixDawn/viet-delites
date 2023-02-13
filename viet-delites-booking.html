@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="make-a-booking.css">
+  <title>Book a Table</title>
+  <script src="./makebooking.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#booking">Make a booking</a>
+            <a href="seagrill.html">View Seagrill</a>
+        </nav>
+        <img class="logo" src="./public/img/logo-beige.svg" alt="">
+    </header>
+    <div id="banner">
+        <div class="banner-text">Viet de Lites at South Bank</div>
+    </div>
+  <div class="form-container">
+    <div class="form-heading">
+      Book a Table
+    </div>
+    <form action="https://formsubmit.co/dane.thomson@outlook.com" id="bookingForm" onsubmit="return validateForm()" method="post">
+        <input type="text" id="name" name="name" class="form-input" placeholder="Name" required>
+        <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
+        <input type="text" id="phone" name="Mobile" class="form-input" placeholder="Phone Number" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" class="form-input" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" class="form-input" required>
+        <input type="number" id="partySize" name="partySize" placeholder="Party Size" class="form-input" min="1" required>
+        <input type="hidden" name="_autoresponse" value="You should hear from us soon to confirm your booking!">
+        <button type="submit" class="form-submit">Submit Form</button>
+
+    </form>
+  </div>
+
+  <footer>
+    <div class="left-footer">
+      <img src="./public/img/Logo-green.svg" alt="logo">
+      <div>
+        <h5 class="smaller-text">Authentic Vietnamese Cuisine</h5>
+        <p class="smaller-text">Shop 4a, Little Stanley Street, Southbank, 4101</p>
+        <p class="smaller-text">07 3844 8979</p>
+      </div>
+      <a href="https://www.facebook.com/VietDelites/">
+          <img src="./public/img/facebookLogo.png" alt="Facebook Logo" style="height: 50px;">
+      </a>
+    </div>
+    </div>
+
+    <div class="right-footer">
+        
+    </div>
+  </footer>
+</body>
+</html>

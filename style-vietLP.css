@@ -1,0 +1,288 @@
+@font-face {
+    font-family: Cormorant;
+    src: url("./public/font/CormorantGaramond-MediumItalic.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Cormorant";
+    font-size: 22px;
+    background-color: beige;
+}
+
+header {
+    background-color: #006400;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-bottom: 10px solid #388942;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1A554A;
+    color: white;
+}
+  
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo{
+    padding-top: 50px;
+    padding-right: 25px;
+    height: 100px;
+    width: 100px;
+}
+
+#banner {
+    background-image: url('./public/img/vietDelites-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#our-story {
+    text-align: center;
+    padding: 50px;
+  }
+
+#opening-hours {
+  display: flex;
+  background-color: beige;
+  padding: 50px;
+}
+
+.hours-container {
+  width: 60%;
+  text-align: center;
+  background-color: #1A554A;
+}
+
+.hours {
+  display: inline-block;
+  color: beige;
+  font-style: italic;
+}
+
+.dish-container {
+  width: 40%;
+  text-align: center;
+}
+
+.dish-container img {
+  width: 100%;
+  height: auto;
+}
+
+#dine-with-us {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #dine-with-us button {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-grid img {
+    width: calc(16.6% - 10px);
+    margin-bottom: 10px;
+    height: calc(16.6% - 10px);
+  }
+
+  #contact-us {
+    text-align: center;
+}
+
+#contact-us form {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+#contact-us h2{
+  font-size: 50px;
+  color: #04AA6D;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  height: 300px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+footer {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A554A;
+  color: #fff;
+  border-top: 10px solid #338043;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 50%;
+}
+
+.smaller-text{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.right-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  background-image: url("./public/img/bamboo-footer-green.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  width: 300px;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+#dine-with-us h2{
+  font-family: 'Cormorant';
+  font-style: italic;
+  color: #04AA6D;
+  font-size: 75px;
+}
+#dine-with-us button:hover {
+  background-color: #04AA6D;
+}
+
+#dine-with-us button{
+  font-family: 'Cormorant';
+  font-style: italic;
+  background-color: #1A554A;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: beige;
+  font-size: 25px;
+  margin-bottom: 100px;
+
+}
+
+input[type=text], textarea {
+  width: 50%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 3px solid #1A554A;
+  border-radius: 15px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  background-color: beige;
+  color: #1A554A;
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-size: large;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #1A554A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 150px;
+  display: block;
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-size: large;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #04AA6D;
+}
+
+/* Add a background color and some padding around the form */
+@media (max-width: 500px){
+  .left-footer{
+    width: 100%;
+  }
+}
